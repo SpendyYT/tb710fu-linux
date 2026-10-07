@@ -148,7 +148,7 @@
 	gpio-keys {
 		compatible = "gpio-keys";
 
-		pinctrl-0 = <&volume_up_n>;
+		pinctrl-0 = <&volume_up_n>, <&hall_sensor_default>;
 		pinctrl-names = "default";
 
 		key-volume-up {
@@ -231,7 +231,7 @@
 			no-map;
 		};
 
-		rmtfs_mem: rmtfs@d7c00000 {
+		rmtfs_mem: rmtfs@d3000000 {
 			compatible = "qcom,rmtfs-mem";
 			reg = <0 0xd3000000 0 0x400000>;
 			no-map;
